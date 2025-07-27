@@ -185,15 +185,15 @@ IGNORABLE_404_URLS = [
 ]
 
 
-# # Additional security django check --deploy
-# SECURE_HSTS_SECONDS = 31536000 
-# SECURE_HSTS_INCLUDE_SUBDOMAINS = True
-# SECURE_HSTS_PRELOAD = True
+# Additional security django check --deploy
+SECURE_HSTS_SECONDS = 31536000 
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
+SECURE_HSTS_PRELOAD = True
 
-# #  If you're using a reverse proxy (like Nginx), make sure it passes the HTTPS status with a header like:
-# SECURE_SSL_REDIRECT = True
-# SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#  If you're using a reverse proxy (like Nginx), make sure it passes the HTTPS status with a header like:
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
-# SESSION_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
 
-# CSRF_COOKIE_SECURE = True
+CSRF_COOKIE_SECURE = True
